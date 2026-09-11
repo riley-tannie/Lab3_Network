@@ -1,0 +1,13 @@
+services:
+
+  web:
+
+    build: .
+
+    container_name: router-ssh-web
+
+    ports:
+
+      - "5000:5000"
+
+    restart: unless-stopped
